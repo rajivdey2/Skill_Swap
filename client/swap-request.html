@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkillSwap - Home</title>
+  <title>SkillSwap - Request Swap</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,12 +21,17 @@
     </nav>
   </header>
   <main>
-    <h2>Welcome to SkillSwap</h2>
-    <p>Connect with others to exchange skills! Register or log in to start swapping.</p>
-    <div class="cta">
-      <a href="register.html" class="btn">Get Started</a>
-      <a href="users.html" class="btn">Browse Users</a>
-    </div>
+    <h2>Request a Swap</h2>
+    <form id="swap-request-form">
+      <label for="receiverId">Receiver User ID:</label>
+      <input type="text" id="receiverId" required>
+      <label for="skillOffered">Skill Offered:</label>
+      <input type="text" id="skillOffered" required>
+      <label for="skillWanted">Skill Wanted:</label>
+      <input type="text" id="skillWanted" required>
+      <button type="submit" class="btn">Request Swap</button>
+    </form>
+    <p id="swap-request-message"></p>
   </main>
   <script src="app.js"></script>
 </body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap - Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SkillSwap</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="profile.html">Profile</a>
+      <a href="users.html">Find Users</a>
+      <a href="swaps.html">My Swaps</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Create Your Profile</h2>
+    <form id="register-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="location">Location:</label>
+      <input type="text" id="location">
+      <label for="profilePhoto">Profile Photo URL:</label>
+      <input type="url" id="profilePhoto">
+      <label for="skillsOffered">Skills Offered (comma-separated):</label>
+      <input type="text" id="skillsOffered" placeholder="e.g., Coding, Cooking">
+      <label for="skillsWanted">Skills Wanted (comma-separated):</label>
+      <input type="text" id="skillsWanted" placeholder="e.g., Guitar, Painting">
+      <label for="availability">Availability:</label>
+      <input type="text" id="availability" placeholder="e.g., Weekends">
+      <label><input type="checkbox" id="isPublic" checked> Public Profile</label>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p id="register-message"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

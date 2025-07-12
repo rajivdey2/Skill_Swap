@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkillSwap - Home</title>
+  <title>SkillSwap - Find Users</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,12 +21,13 @@
     </nav>
   </header>
   <main>
-    <h2>Welcome to SkillSwap</h2>
-    <p>Connect with others to exchange skills! Register or log in to start swapping.</p>
-    <div class="cta">
-      <a href="register.html" class="btn">Get Started</a>
-      <a href="users.html" class="btn">Browse Users</a>
-    </div>
+    <h2>Find Users</h2>
+    <form id="search-form">
+      <label for="skill">Search by Skill:</label>
+      <input type="text" id="skill" placeholder="e.g., Coding">
+      <button type="submit" class="btn">Search</button>
+    </form>
+    <div id="users-list"></div>
   </main>
   <script src="app.js"></script>
 </body>
