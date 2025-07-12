@@ -8,21 +8,24 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ✅ Root route to fix "Cannot GET /" on Render
+app.get('/', (req, res) => {
+  res.send('🚀 Skill Swap API is running!');
+});
+
 // ------------------ DATABASE CONNECTION ------------------
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => console.log("✅ MongoDB Connected"))
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log("✅ MongoDB Connected"))
   .catch(err => console.error("❌ Mongo Error:", err));
 
 // ------------------ USER MODEL ------------------
 const userSchema = new mongoose.Schema({
   name: String,
   location: String,
-  profilePhoto: String, // URL (optional)
+  profilePhoto: String,
   skillsOffered: [String],
   skillsWanted: [String],
-  availability: String, // Example: "weekends", "evenings"
+  availability: String,
   isPublic: { type: Boolean, default: true },
   isBanned: { type: Boolean, default: false },
   feedbacks: [String]
@@ -147,7 +150,7 @@ app.patch('/admin/ban/:userId', async (req, res) => {
   }
 });
 
-// 🔐 Reject inappropriate skills (clears the lists)
+// 🔐 Reject inappropriate skills
 app.patch('/admin/clear-skills/:userId', async (req, res) => {
   try {
     await User.findByIdAndUpdate(req.params.userId, {
@@ -160,7 +163,7 @@ app.patch('/admin/clear-skills/:userId', async (req, res) => {
   }
 });
 
-// 🔐 Get reports
+// 🔐 Get user + swap reports
 app.get('/admin/reports', async (req, res) => {
   try {
     const users = await User.find();
