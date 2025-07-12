@@ -1,0 +1,19 @@
+🌐 SkillSwap — Trade Talent, Grow Together
+SkillSwap is a dynamic platform where individuals connect, share, and grow by exchanging their unique skills. Whether you're a Photoshop pro looking to learn guitar, or a coding geek eager to master public speaking — this app lets you trade what you know for what you want.
+
+📇 User Profiles
+Set up a personalized profile with your name, location, photo, and a list of skills you offer and seek. Choose to go public or stay private — your skills, your rules.
+
+🔍 Search & Discover
+Browse a community of learners and teachers. Use smart search to find users by skill — from “Excel” to “Yoga”.
+
+🤝 Skill Swaps Made Simple
+Send, accept, or decline swap requests with a click. Track your active and pending exchanges, and manage them with ease. Change your availability (like weekends or evenings) to fit your schedule.
+
+🌟 Build Reputation
+After every successful swap, give and receive ratings and feedback to help others find the right fit — and watch your own profile grow!
+
+🚫 Full Control
+Not feeling the vibe? Delete unaccepted swap requests anytime — you're in charge.
+
+
