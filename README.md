@@ -1,7 +1,7 @@
 # SkillSwap
 
 SkillSwap is a basic web app where users can exchange skills with each other. Users can register, offer skills, request swaps, give feedback, and admins can manage users.
-
+🔗 **Live Demo:** [https://skill-swap-gold.vercel.app](https://skill-swap-gold.vercel.app)
 ## Features
 
 - Register and login (mocked using user ID)
