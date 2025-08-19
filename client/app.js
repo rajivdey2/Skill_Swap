@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://skill-swap-u445.onrender.com';
 
 // Store logged-in user ID
 let currentUserId = localStorage.getItem('userId');
